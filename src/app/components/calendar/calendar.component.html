@@ -1,0 +1,10 @@
+<div class="ion-padding">
+
+  <ion-calendar [(ngModel)]="date"
+    (select)="onSelect($event)"
+    [options] = "options"
+    [type]="type"
+    [format]="'YYYY-MM-DD'">
+  </ion-calendar>
+
+</div>
