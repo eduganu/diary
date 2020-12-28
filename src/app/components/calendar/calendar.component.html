@@ -7,4 +7,16 @@
     [format]="'YYYY-MM-DD'">
   </ion-calendar>
 
+  <ion-list *ngIf="dayEntries">
+    <ion-item-group *ngFor="let entry of dayEntries;">
+      <ion-card>
+      <ion-item-divider color="light">
+        <h2>{{entry.date}}</h2>
+      </ion-item-divider>
+      
+        {{entry.textEntry}}
+      </ion-card>
+    </ion-item-group>
+  </ion-list>
+
 </div>
